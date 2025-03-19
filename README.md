@@ -1,10 +1,10 @@
-# ![Logo](LibAtorch/logo_small.png) LibAtorch
+# ![Logo](https://github.com/RobThree/LibAtorch/raw/main/LibAtorch/logo_small.png) LibAtorch
 
 ## Introduction
 
 Provides a simple way to control Atorch loads over (USB virtual) Serial ports. Available as [NuGet package](https://www.nuget.org/packages/CFNReader).
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/RobThree/LibAtorch/test.yml?branch=master&style=flat-square) [![Nuget version](https://img.shields.io/nuget/v/LibAtorch.svg?style=flat-square)](https://www.nuget.org/packages/LibAtorch/)
+![Build Status](https://img.shields.io/github/actions/workflow/status/RobThree/LibAtorch/test.yml?branch=main&style=flat-square) [![Nuget version](https://img.shields.io/nuget/v/LibAtorch.svg?style=flat-square)](https://www.nuget.org/packages/LibAtorch/)
 
 ## Devices
 
