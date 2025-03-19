@@ -1,4 +1,4 @@
-# ![Logo](https://github.com/RobThree/LibAtorch/raw/main/LibAtorch/logo_small.png) LibAtorch
+# ![Logo](https://raw.githubusercontent.com/RobThree/LibAtorch/main/LibAtorch/logo_small.png) LibAtorch
 
 ## Introduction
 
