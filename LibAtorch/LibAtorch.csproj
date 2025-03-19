@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<AnalysisLevel>latest</AnalysisLevel>
+		<Title>Atorch library</Title>
+		<Authors>RobIII</Authors>
+		<Company>Devcorner.nl</Company>
+		<Description>A library for reading (and commanding) Atorch devices</Description>
+		<Copyright>(c) 2025 Devcorner.nl</Copyright>
+		<PackageProjectUrl>https://git.devcorner.nl/devcorner/tools/libatorch/</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://git.devcorner.nl/devcorner/tools/libatorch/</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>atorch;library;nuget;serial;bluetooth;protocol</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageIcon>logo.png</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.3" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="9.0.3" />
+		<PackageReference Include="PolySharp" Version="1.15.0">
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		  <PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="System.IO.Ports" Version="9.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="logo.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+</Project>
