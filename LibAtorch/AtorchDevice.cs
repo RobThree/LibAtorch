@@ -219,16 +219,16 @@ public class AtorchDevice : IAtorchDevice
     /// </summary>
     /// <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="CancellationToken.None"/>.</param>
     /// <returns>A <see cref="Task{bool}"/> whose <see cref="P:System.Threading.Tasks.Task`1.Result"/> property is the capacity the load has consumed in mAh.</returns>
-    public async Task<double> ReadCapacityMiliAmpHours(CancellationToken cancellationToken = default)
-        => (await SendRequest<IntegerResponse>(new Request(QueryType.CapacityMiliAmpHours), cancellationToken)).Value / (double)1000;
+    public async Task<double> ReadCapacityMilliAmpHours(CancellationToken cancellationToken = default)
+        => (await SendRequest<IntegerResponse>(new Request(QueryType.CapacityMilliAmpHours), cancellationToken)).Value / (double)1000;
 
     /// <summary>
     /// Reads the capacity in mWh the load has consumed.
     /// </summary>
     /// <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="CancellationToken.None"/>.</param>
     /// <returns>A <see cref="Task{bool}"/> whose <see cref="P:System.Threading.Tasks.Task`1.Result"/> property is the capacity the load has consumed in mWh.</returns>
-    public async Task<double> ReadCapacityMiliWattHours(CancellationToken cancellationToken = default)
-        => (await SendRequest<IntegerResponse>(new Request(QueryType.CapacityMiliWattHours), cancellationToken)).Value / (double)1000;
+    public async Task<double> ReadCapacityMilliWattHours(CancellationToken cancellationToken = default)
+        => (await SendRequest<IntegerResponse>(new Request(QueryType.CapacityMilliWattHours), cancellationToken)).Value / (double)1000;
 
     /// <summary>
     /// Reads the temperature of the MOSFET.
@@ -438,8 +438,8 @@ public class AtorchDevice : IAtorchDevice
                 (byte)QueryType.VoltageReading => new IntegerResponse(value),
                 (byte)QueryType.CurrentReading => new IntegerResponse(value),
                 (byte)QueryType.ElapsedTime => new TimespanResponse(value),
-                (byte)QueryType.CapacityMiliAmpHours => new IntegerResponse(value),
-                (byte)QueryType.CapacityMiliWattHours => new IntegerResponse(value),
+                (byte)QueryType.CapacityMilliAmpHours => new IntegerResponse(value),
+                (byte)QueryType.CapacityMilliWattHours => new IntegerResponse(value),
                 (byte)QueryType.MosfetTemperature => new IntegerResponse(value),
                 (byte)QueryType.CurrentSetting => new IntegerResponse(value),
                 (byte)QueryType.CutoffVoltageSetting => new IntegerResponse(value),

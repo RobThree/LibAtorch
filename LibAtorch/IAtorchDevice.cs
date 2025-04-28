@@ -10,8 +10,8 @@ public interface IAtorchDevice
     bool IsOpen { get; }
     Task<bool> IsLoadEnabled(CancellationToken cancellationToken = default);
     Task<LoadState> ReadLoad(CancellationToken cancellationToken = default);
-    Task<double> ReadCapacityMiliAmpHours(CancellationToken cancellationToken = default);
-    Task<double> ReadCapacityMiliWattHours(CancellationToken cancellationToken = default);
+    Task<double> ReadCapacityMilliAmpHours(CancellationToken cancellationToken = default);
+    Task<double> ReadCapacityMilliWattHours(CancellationToken cancellationToken = default);
     Task<double> ReadCurrent(CancellationToken cancellationToken = default);
     Task<double> ReadCurrentSetting(CancellationToken cancellationToken = default);
     Task<double> ReadCutoffVoltageSetting(CancellationToken cancellationToken = default);
